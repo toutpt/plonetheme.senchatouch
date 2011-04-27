@@ -98,6 +98,11 @@ class PloneSiteRoot(BrowserView):
                                                  name=u"plone_portal_state")
         return portal_state
 
+    def settings(self):
+        test = {'title':'my title',
+                'html': '<h1>Hello world</h1>'}
+        return json.dumps(test)
+
 class ATDocument(PloneSiteRoot):
     """A base default view returning json content formated for the sencha
     touch app"""

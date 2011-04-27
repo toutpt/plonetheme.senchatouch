@@ -1,0 +1,1 @@
+<tal:block content="structure view/context/getText"></tal:block>

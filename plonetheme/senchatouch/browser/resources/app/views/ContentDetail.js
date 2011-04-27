@@ -20,10 +20,18 @@ plone.views.ContentDetail = Ext.extend(Ext.Panel, {
         ]
     }],
     updateWithRecord: function(record) {
-      var toolbar = this.getDockedItems()[0];
+    	Ext.each(this.items.items, function(item) {
+            item.update(record.data);
+        });
+    	var toolbar = this.getDockedItems()[0];
       toolbar.setTitle(record.get('title'));
     },
     styleHtmlContent:true,
     scroll: 'vertical',
-    items: []
+    items: [
+	  {xtype:'panel',tpl:[
+	      '<h4>Description</h4>',
+          '<div class="field">{htmlcontent}</div>'
+	  ]}
+    ]
 });

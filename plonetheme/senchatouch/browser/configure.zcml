@@ -40,4 +40,12 @@
       class=".content.ContentJSON"
       permission="zope2.View"
     />
+  
+  <browser:page
+    for="Products.ATContentTypes.interfaces.IATDocument"
+    name="senchatouch.html"
+    class=".content.Document"
+    template="document.pt"
+    permission="zope2.View"
+    />
 </configure>

@@ -3,6 +3,7 @@ plone.models.Content = Ext.regModel("plone.models.Content", {
              {name: "title", type: "string"},
              {name: "id", type: "string"},
         {name: "description", type: "string"},
+        {name: "htmlcontent", type: "string"},
         {name: "url", type: "string"}
     ]
 });
