@@ -1,6 +1,7 @@
 plone.models.Content = Ext.regModel("plone.models.Content", {
     fields: [
-        {name: "title", type: "string"},
+             {name: "title", type: "string"},
+             {name: "id", type: "string"},
         {name: "description", type: "string"},
         {name: "url", type: "string"}
     ]

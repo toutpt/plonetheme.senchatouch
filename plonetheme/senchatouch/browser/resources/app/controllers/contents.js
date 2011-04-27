@@ -1,12 +1,14 @@
 plone.controllers.contents = new Ext.Controller({
     index: function(options) {
+		plone.views.viewport.setActiveItem(
+		        plone.views.contentList, options.animation
+		    );
     },
     show: function(options) {
-       var id = parseInt(options.id),
+      var id = options.id,
         content = plone.stores.contents.getById(id);
-      console.log(id);
+      console.log(options.id);
       if (content) {
-          console.log('content');
           plone.views.contentDetail.updateWithRecord(content);
           plone.views.viewport.setActiveItem(
               plone.views.contentDetail, options.animation

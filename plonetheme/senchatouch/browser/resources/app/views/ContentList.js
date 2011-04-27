@@ -6,7 +6,7 @@ plone.views.ContentList = Ext.extend(Ext.Panel, {
     items: [{
         xtype: 'list',
         store: plone.stores.contents,
-        itemTpl: '{title} {id}',
+        itemTpl: '{title}',
         onItemDisclosure: function (record) {
             Ext.dispatch({
                 controller: plone.controllers.contents,
