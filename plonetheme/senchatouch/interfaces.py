@@ -6,7 +6,7 @@ class IBrowserLayer(interface.Interface):
     """Browser layer"""
 
 class IThemeSettings(interface.Interface):
-    """Settings for jquerymobile theme"""
+    """Settings for senchatouch theme"""
 
     domain = schema.URI(
         title=i18n.label_domain,

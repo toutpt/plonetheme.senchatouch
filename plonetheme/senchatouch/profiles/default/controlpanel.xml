@@ -11,7 +11,7 @@
         category="Products"
         condition_expr=""
         url_expr="string:${portal_url}/@@plonetheme-senchatouch-controlpanel"
-        icon_expr="string:${portal_url}/++resource++plone.app.theming.gif"
+        icon_expr="string:${portal_url}/++resource++senchatouch/touch_icon.png"
         visible="True"
         i18n:attributes="title">
             <permission>Manage portal</permission>

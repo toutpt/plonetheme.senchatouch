@@ -7,7 +7,7 @@ from plone.app.layout.globals.interfaces import IViewView
 
 def browserDefault(self, obj):
     """We monkey patch this method. We want to control html rendering
-    throw @@jquerymobile view"""
+    throw @@senchatouch view"""
     request = getattr(self, 'REQUEST', None)
 
     if interfaces.IBrowserLayer.providedBy(request):

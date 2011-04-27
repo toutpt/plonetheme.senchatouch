@@ -1,4 +1,0 @@
-<layers>
-    <layer name="plonetheme.senchatouch"
-           interface="plonetheme.senchatouch.interfaces.IBrowserLayer" />
-</layers>
