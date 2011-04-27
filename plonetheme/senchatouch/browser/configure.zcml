@@ -1,0 +1,43 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plonetheme.senchatouch">
+  <browser:page
+      name="plonetheme-senchatouch-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      permission="cmf.ManagePortal"
+      class=".controlpanel.ThemeSettingsControlPanelView"
+      />
+  <browser:page
+      name="senchatouch"
+      for="*"
+      permission="zope2.View"
+      class=".senchatouch.SenchaTouch"
+      template="senchatouch.pt"
+      />
+  <browser:page
+      name="senchatouch.js"
+      for="Products.ATContentTypes.interfaces.document.IATDocument"
+      permission="zope2.View"
+      class=".senchatouch.ATDocument"
+      template="senchatouch.pt"
+      />
+  <browser:page
+      name="senchatouch.js"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      permission="zope2.View"
+      class=".senchatouch.PloneSiteRoot"
+      template="senchatouch.pt"
+      />
+  <browser:resourceDirectory
+      directory="resources"
+      name="senchatouch"
+    />
+
+  <browser:page
+      name="sencha.model.content.json"
+      for="*"
+      class=".content.ContentJSON"
+      permission="zope2.View"
+    />
+</configure>

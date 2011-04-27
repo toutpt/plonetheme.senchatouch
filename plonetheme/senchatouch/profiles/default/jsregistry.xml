@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts">
+ <javascript cacheable="True" compression="none"
+     cookable="True" enabled="1" expression=""
+     id="++resource++senchatouch/touch/sencha-touch-debug.js" />
+ <javascript cacheable="True" compression="none"
+     cookable="True" enabled="1" expression=""
+     id="plonetheme_senchatouch_config.js" />
+ <javascript cacheable="True" compression="none"
+     cookable="True" enabled="1" expression=""
+     id="++resource++senchatouch/app/app.js" />
+ <javascript cacheable="True" compression="none"
+     cookable="True" enabled="1" expression=""
+     id="++resource++senchatouch/app/models/Content.js" />
+ <javascript cacheable="True" compression="none"
+     cookable="True" enabled="1" expression=""
+     id="++resource++senchatouch/app/views/Viewport.js" />
+ <javascript cacheable="True" compression="none"
+     cookable="True" enabled="1" expression=""
+     id="++resource++senchatouch/app/views/ContentList.js" />
+</object>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+        <title tal:content="view/title">Content</title>
+        <link rel="stylesheet" type="text/css" tal:attributes="href string:${view/portal_url}/++resource++senchatouch/touch/resources/css/sencha-touch.css" />
+        <script type="text/javascript" tal:attributes="src string:${view/portal_url}/++resource++senchatouch/touch/sencha-touch-debug.js"></script>
+        <script type="text/javascript" tal:attributes="src string:${view/portal_url}/++resource++senchatouch/app/app.js"></script>
+        <script type="text/javascript" tal:attributes="src string:${view/portal_url}/++resource++senchatouch/app/models/Content.js"></script>
+        <script type="text/javascript" tal:attributes="src string:${view/portal_url}/++resource++senchatouch/app/views/Viewport.js"></script>
+        <script type="text/javascript" tal:attributes="src string:${view/portal_url}/++resource++senchatouch/app/views/ContentList.js"></script>
+        <script type="text/javascript" tal:attributes="src string:${view/portal_url}/++resource++senchatouch/app/views/ContentDetail.js"></script>
+        <script type="text/javascript" tal:attributes="src string:${view/portal_url}/++resource++senchatouch/app/controllers/contents.js"></script>
+    </head><body></body>
+</html>
